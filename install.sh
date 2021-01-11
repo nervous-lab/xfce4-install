@@ -1,0 +1,1 @@
+sudo apt update && sudo apt install xfce4 xfce4-goodies && sudo apt install tightvncserver && vncserver && vncserver -kill :1 && mv ~/.vnc/xstartup ~/.vnc/xstartup.bak && touch ~/.vnc/xstartup && echo -e "#!/bin/bash\nxrdb $HOME/.Xresources\nstartxfce4 &\n" >> ~/.vnc/xstartup && chmod +x ~/.vnc/xstartup && vncserver
